@@ -54,7 +54,6 @@ body {
     animation: pulse 0.4s ease-in-out infinite alternate;
 }
 
-
 @keyframes pulse {
     from {
         transform: scale(1.2);
