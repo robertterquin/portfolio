@@ -32,7 +32,8 @@ body {
     display: inline-block;
     max-width: 650px; 
 }
-.icons {
+
+.profile {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
@@ -42,17 +43,18 @@ body {
    
 }
 
-.icons img {
+.profile-icons img {
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     height: 75px; 
     width: 75px;
     border-radius: 12px;
 }
 
-.icons img:hover {
+.profile-icons img:hover {
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
     transform: scale(1.2);
     animation: pulse 0.4s ease-in-out infinite alternate;
+
 }
 
 @keyframes pulse {
