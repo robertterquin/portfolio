@@ -24,7 +24,7 @@ body {
 .container {
     position: absolute;
     text-align: center;
-    padding: 40px; 
+    padding: 35px; 
     color: #ffffff; 
     background: rgba(255, 255, 255, 0.0); 
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9); 
@@ -53,6 +53,11 @@ body {
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
     transform: scale(1.2);
     animation: pulse 0.4s ease-in-out infinite alternate;
+}
+
+.icons p {
+    font-weight: bold;
+    font-size: 15px;
 }
 
 @keyframes pulse {
