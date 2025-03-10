@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Terquin. C. Laqui</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="icons_hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css">
-   
 </head>
-<body>
+<body style="font-family: 'Poppins', sans-serif;" class="h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative text-white">
+    <div class="absolute inset-0 z-0" id="vanta-bg"></div>
 
-    <div id="vanta-bg">
-        <div class="container">
-            <div class="profile-pic">
-                <img src="images/dp.jpg" alt="Profile Picture">
+    <nav class="fixed top-0 left-0 w-full bg-grey bg-opacity-80 backdrop-blur-lg shadow-lg py-3 px-10 flex justify-between items-center z-50 border-b border-gray-700">
+        <div class="flex items-center">
+            <div class="flex items-center justify-center rounded-full text-white font-extrabold px-4 py-2 tracking-wider space-x-5">
+                <img src="images/home-button.png" alt="Logo" class="w-8 h-8 rounded-full">
+                <span>RTL</span>
             </div>
-            <div id="info">
-                <p class="name">ROBERT TERQUIN LAQUI</p>
-                <p class="intro-text">
-                   Aspiring Mobile App Developer
-                </p>
-            </div>
-
-            <div id="buttons">
-                <a href="index.html"><button>Home Page</button></a>
-                <a href="about.html"><button>About Me</button></a>
-                <a href="stack.html"><button>Tech Stack</button></a>
-                <a href="contact.html"><button>Contact</button></a>
-
-        
-            </div>
-
+        </div>     
+        <div class="flex space-x-4 ml-auto">
+            <a href="index.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                HOME
+            </a>
+            <a href="about.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                ABOUT ME
+            </a>
+            <a href="stack.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                TECH STACK
+            </a>
+            <a href="contact.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                CONTACT
+            </a>
         </div>
+    </nav>
+
+    <div class="relative z-10 flex flex-col items-center justify-center p-10 text-white bg-black bg-opacity-30 rounded-2xl shadow-lg shadow-gray-100 max-w-3xl text-center mt-20">
+        <div class="w-40 h-40 rounded-full overflow-hidden border border-white shadow-lg transition-transform transform duration-700 hover:scale-110 hover:shadow-white">
+            <img src="images/dp.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+        </div>
+        <h1 class="mt-5 text-2xl font-bold tracking-[0.3em]">ROBERT TERQUIN LAQUI</h1>
+        <h2 class="mt-3 text-lg text-white-300">Aspiring Mobile App Developer</h2>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="vanta.js"></script>
-    <script src="transition.js"></script>
-
 </body>
-
-
 </html>

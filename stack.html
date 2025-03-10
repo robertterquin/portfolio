@@ -4,56 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Stack</title>
-    <link rel="stylesheet" href="stack.css">
-</head>
-<body>
-    <div id="vanta-bg"></div> 
-    
-    <div class="container">
-       
-        <h1>TECH STACK</h1>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="icons_hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        <div class="icons">
-            <div class="icon-item">
-                <img src="images/html-5.png" alt="HTML5 Icon">
-                <p>HTML5</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/css-3.png" alt="CSS Icon">
-                <p>CSS3</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/java-script.png" alt="JavaScript Icon">
-                <p>JavaScript</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/java.png" alt="Java Icon">
-                <p>Java</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/letter-c.png" alt="C Icon">
-                <p>C</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/mysql.png" alt="MySQL Icon">
-                <p>MySQL</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/python.png" alt="Python Icon">
-                <p>Python</p>
-            </div>
-            <div class="icon-item">
-                <img src="images/social.png" alt="Git Icon">
-                <p>Git</p>
-            </div>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative text-white">
+    <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+
+    <nav class="fixed top-0 left-0 w-full bg-grey bg-opacity-80 backdrop-blur-lg shadow-lg py-3 px-10 flex justify-between items-center z-50 border-b border-gray-700">
+        <div class="flex items-center justify-center rounded-full text-white font-extrabold px-4 py-2 tracking-wider space-x-5">
+            <img src="images/database.png" alt="Logo" class="w-8 h-8 rounded-full">
+            <span>RTL</span>
         </div>
-    
-       
-        <div id="buttons">
-            <a href="index.html"><button>Home Page</button></a>
-            <a href="about.html"><button>About Me</button></a>
-            <a href="stack.html"><button>Tech Stack</button></a>
-            <a href="contact.html"><button>Contact</button></a>
+        </div>     
+        <div class="flex space-x-4 ml-auto">
+            <a href="index.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                HOME
+            </a>
+            <a href="about.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                ABOUT ME
+            </a>
+            <a href="stack.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                TECH STACK
+            </a>
+            <a href="contact.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                CONTACT
+            </a>
+        </div>
+    </nav>
+
+    <div class="relative z-10 flex flex-col items-center justify-center p-10 text-white bg-black bg-opacity-30 rounded-2xl shadow-lg shadow-gray-100 max-w-3xl text-center mt-20">
+        <h1 class=" text-2xl font-bold tracking-[0.3em]">TECH STACK</h1>
+
+        <div id="tech-stack" class="mt-10 grid grid-cols-4 gap-20">
+            <div class="flex flex-col items-center">
+                <img src="images/html-5.png" alt="HTML5 Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">HTML5</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/css-3.png" alt="CSS Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">CSS3</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/java-script.png" alt="JavaScript Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">JavaScript</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/java.png" alt="Java Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">Java</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/letter-c.png" alt="C Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">C</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/mysql.png" alt="MySQL Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">MySQL</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/python.png" alt="Python Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-white-300 font-bold">Python</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/social.png" alt="Git Icon" class="w-20 h-20 object-cover transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-gray-300 font-bold">Git</p>
+            </div>
         </div>
     </div>
 

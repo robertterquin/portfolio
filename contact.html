@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Robert Terquin. C. Laqui</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="icons_hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="contact.css">
-   
-</head>
-<body>
-    <div id="vanta-bg"></div> 
     
-    <div class="container">
-       
-        <h1>CONTACTS</h1>
-        <div class="icons">
-            <div class="icon-item">
-                <a href="https://github.com/robertterquinheres" target="_blank">
-                    <img src="images/github.png" alt="GitHub Icon">
-                </a>
-                <p>GitHub</p>
-            </div>        
-            <div class="icon-item">
-                <img src="images/linkedin.png" alt="LinkedIn Icon">
-                <p>LinkedIn</p>
-            </div>
-        </div>      
-       
-        <div id="buttons">
-            <a href="index.html"><button>Home Page</button></a>
-            <a href="about.html"><button>About Me</button></a>
-            <a href="stack.html"><button>Tech Stack</button></a>
-            <a href="contact.html"><button>Contact</button></a>
-        </div>
-    </div>
 
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative text-white"></body>
+    <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+
+    <nav class="fixed top-0 left-0 w-full bg-grey bg-opacity-80 backdrop-blur-lg shadow-lg py-3 px-10 flex justify-between items-center z-50 border-b border-gray-700">
+        <div class="flex items-center">
+            <div class="flex items-center justify-center rounded-full text-white font-extrabold px-4 py-2 tracking-wider space-x-5">
+                <img src="images/worldwide.png" alt="Logo" class="w-8 h-8 rounded-full">
+                <span>RTL</span>
+            </div>
+            
+        </div>     
+        <div class="flex space-x-4 ml-auto">
+            <a href="index.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                HOME
+            </a>
+            <a href="about.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                ABOUT ME
+            </a>
+            <a href="stack.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                TECH STACK
+            </a>
+            <a href="contact.html" class="px-4 py-2 text-white text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+                CONTACT
+            </a>
+        </div>
+    </nav>
+    
+    <div class="relative z-10 flex flex-col items-center p-10 text-white bg-black bg-opacity-30 rounded-2xl shadow-lg shadow-gray-100 max-w-4x1 text-center mt-20">
+        <h1 class=" text-2xl font-bold tracking-[0.3em]">CONTACT ME</h1>
+
+        <h2 class="mt-3 text-sm text-white-300">Let's build something amazing together</h2>
+        
+        <div id="tech-stack" div class="mt-10 flex space-x-20">
+            <div class="flex flex-col items-center">
+                <a href="https://github.com/robertterquinheres" target="_blank" class="w-20 h-20">
+                    <img src="images/github.png" alt="GitHub Icon" class="w-full h-full object-cover rounded-lg transition-transform transform hover:scale-110 hover:shadow-white">
+                </a>
+                <p class="mt-2 text-sm text-gray-300">GitHub</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/linkedin.png" alt="LinkedIn Icon" class="w-20 h-20 object-cover rounded-lg transition-transform transform hover:scale-110 hover:shadow-white">
+                <p class="mt-2 text-sm text-gray-300">LinkedIn</p>
+            </div>
+        </div>
+        
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="vanta.js"></script>
 </body>
-
 </html>
