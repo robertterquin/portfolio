@@ -6,3 +6,23 @@
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
     transform: scale(1.1);
 }
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font: medium;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: #6794ff; /* Highlight color */
+    border-bottom: 2px solid #6794ff;
+    transform: scale(1.1); /* Slightly enlarge active link */
+}
+
+.nav-link:hover {
+    color: gray;
+    transform: scale(1.05);
+}
+

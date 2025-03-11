@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="navigation.js"></script>
+    <link rel="stylesheet" href="icons_hover.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
@@ -17,24 +19,25 @@
             <img src="images/info.png" alt="Logo" class="w-8 h-8 rounded-full">
             <span>RTL</span>
         </div>
-        </div>     
+        
+        <!-- ✅ Move the navigation links inside the <nav> -->
         <div class="flex space-x-4 ml-auto">
-            <a href="index.html" class="px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+            <a href="index.html" class="nav-link px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
                 HOME
             </a>
-            <a href="about.html" class="px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+            <a href="about.html" class="nav-link px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
                 ABOUT ME
             </a>
-            <a href="stack.html" class="px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+            <a href="stack.html" class="nav-link px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
                 TECH STACK
             </a>
-            <a href="contact.html" class="px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
+            <a href="contact.html" class="nav-link px-4 py-2 text-white font-bold font-medium transition duration-300 hover:scale-105 hover:text-gray-300">
                 CONTACT
             </a>
         </div>
     </nav>
-
-    <div class="relative z-10 flex flex-col items-center p-10 text-white bg-grey bg-opacity-30 rounded-2xl shadow-lg shadow-gray-100 max-w-3xl text-center mt-20">
+    
+    <div class="relative z-10 flex flex-col items-center p-10 text-white bg-grey bg-opacity-30 rounded-2xl shadow-lg shadow-gray-400 max-w-3xl text-center mt-20">
         <div class="w-40 h-40 rounded-full overflow-hidden border border-white shadow-lg transition-transform transform duration-700 hover:scale-110 hover:shadow-white">
             <img src="images/dp.jpg" alt="Profile Picture" class="w-full h-full object-cover">
         </div>
