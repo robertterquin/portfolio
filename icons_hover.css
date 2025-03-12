@@ -16,13 +16,17 @@
 }
 
 .nav-link.active {
-    color: #6794ff; /* Highlight color */
+    color: #6794ff; 
     border-bottom: 2px solid #6794ff;
-    transform: scale(1.1); /* Slightly enlarge active link */
+    transform: scale(1.1); 
 }
 
 .nav-link:hover {
     color: gray;
     transform: scale(1.05);
+}
+
+.navbar {
+    filter: hue-rotate(180deg); 
 }
 
