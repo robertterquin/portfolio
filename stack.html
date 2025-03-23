@@ -12,12 +12,13 @@
 <body style="font-family: 'Poppins', sans-serif;" class="h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative text-white">
     <div class="absolute inset-0 z-0" id="vanta-bg"></div>
 
-    <nav class="fixed top-0 left-0 w-full bg-black-600 bg-opacity-80 backdrop-blur-lg shadow-lg py-3 px-6 sm:px-10 flex flex-col md:flex-row justify-between items-center z-50 border-b border-gray-700">
+    <nav class="fixed top-0 left-0 w-full bg-black-600 bg-opacity-80 backdrop-blur-lg shadow-lg py-3 px-6 sm:px-10 flex flex-wrap md:flex-nowrap justify-between items-center z-50 border-b border-gray-700">
         <div class="flex items-center space-x-3">
             <img src="images/database.png" alt="Logo" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full">
             <span class="text-sm sm:text-base font-extrabold">RTL</span>
         </div>
-        <div class="flex flex-wrap justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0 gap-2 sm:gap-4">
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none text-2xl">☰</button>
+        <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-2 md:mt-0 md:space-x-4 text-center md:text-left">
             <a href="index.html" class="nav-link px-3 sm:px-4 py-2 text-white text-xs sm:text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">HOME</a>
             <a href="about.html" class="nav-link px-3 sm:px-4 py-2 text-white text-xs sm:text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">ABOUT ME</a>
             <a href="stack.html" class="nav-link px-3 sm:px-4 py-2 text-white text-xs sm:text-sm font-medium transition duration-300 hover:scale-105 hover:text-gray-300">TECH STACK</a>
@@ -30,9 +31,9 @@
     <div class="relative z-10 flex flex-col items-center p-10 text-white bg-black-600 bg-opacity-30 rounded-2xl shadow-lg shadow-gray-400 max-w-4xl text-center mt-20">
         <h1 class="text-lg sm:text-2xl font-bold tracking-[0.3em]">TECH STACK</h1>
 
-        <div id="tech-stack" class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 sm:gap-12">
+        <div id="tech-stack" class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8">
             <div class="flex flex-col items-center">
-                <img src="images/html-5.png" alt="HTML5" class="w-20 sm:w-20 transition-transform transform hover:scale-110 hover:shadow-white">
+                <img src="images/html-5.png" alt="HTML5" class="w-16 sm:w-20 transition-transform transform hover:scale-110 hover:shadow-white">
                 <p class="mt-2 text-xs sm:text-sm font-bold">HTML5</p>
             </div>
             <div class="flex flex-col items-center">
@@ -69,5 +70,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="vanta.js"></script>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
