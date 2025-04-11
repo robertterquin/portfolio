@@ -47,18 +47,14 @@
         </div>
     </div>
     
-
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-        <div class="relative bg-white p-6 rounded-lg max-w-3xl w-full">
+        <div class="relative bg-white p-6 rounded-lg max-w-3xl w-full overflow-hidden">
             <span class="absolute top-0 right-0 p-2 text-gray-700 cursor-pointer" onclick="closeModal()">&times;</span>
-            <img id="modal-image" src="" alt="Enlarged Certificate" class="w-full object-contain max-h-[80vh] mx-auto mb-4">
+            <img id="modal-image" src="" alt="Enlarged Certificate" class="w-full object-contain max-h-[80vh] mx-auto mb-4 block" style="border-right: none;">
             <h3 id="modal-title" class="text-xl font-bold text-center text-black"></h3>
         </div>
     </div>
-    
-
-    
-    
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
