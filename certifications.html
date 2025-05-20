@@ -27,25 +27,31 @@
         </div>
     </nav>
 
-    <div class="relative z-10 flex flex-col items-center p-10 text-white bg-black/80 border-2 border-white/30 rounded-lg shadow-[0_0_40px_rgba(156,163,175,0.5)] max-w-4xl text-center mt-20 overflow-auto w-full">
-        <h1 class="text-lg sm:text-2xl font-bold">MY CERTIFICATES</h1>
-        <h2 class="mt-3 text-[14px] sm:text-[20px] text-white-600">Some of my achievements as a BSIT Student</h2>
+<div class="relative z-10 flex flex-col items-center p-10 text-white bg-black/80 border-2 border-white/30 rounded-lg shadow-[0_0_40px_rgba(156,163,175,0.5)] max-w-4xl text-center mt-20 overflow-auto w-full">
+    <h1 class="text-lg sm:text-2xl font-bold">MY CERTIFICATES</h1>
+    <h2 class="mt-3 text-[14px] sm:text-[20px] text-white-600">Some of my achievements as a BSIT Student</h2>
 
-        <div id="tech-stack" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 w-full">
-            <div class="flex flex-col items-center">
-                <img src="images/CodeChum.png" alt="Certificate 1" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/CodeChum.png', 'National Programming Challenge 2024')">
-                <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">National Programming Challenge 2024</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="images/microsoftppt.jpg" alt="Certificate 2" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/microsoftppt.jpg', 'PowerPoint 2019 Associate')">
-                <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">PowerPoint 2019 Associate</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="images/oracle.jpg" alt="Certificate 3" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/oracle.jpg', 'Oracle Java Foundations')">
-                <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">Oracle Java Foundations</p>
-            </div>
+    <div id="tech-stack" class="flex gap-6 mt-10 w-full overflow-x-auto pb-6">
+        <div class="flex-shrink-0 flex flex-col items-center">
+            <img src="images/CodeChum.png" alt="Certificate 1" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/CodeChum.png', 'National Programming Challenge 2024')">
+            <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">National Programming Challenge 2024</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center">
+            <img src="images/microsoftppt.jpg" alt="Certificate 2" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/microsoftppt.jpg', 'PowerPoint 2019 Associate')">
+            <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">PowerPoint 2019 Associate</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center">
+            <img src="images/oracle.jpg" alt="Certificate 3" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/oracle.jpg', 'Oracle Java Foundations')">
+            <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">Oracle Java Foundations</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center">
+            <img src="images/databasecert.png" alt="Certificate 4" class="w-80 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal('images/databasecert.png', 'Information Technology Specialist in Databases')">
+            <p class="mt-2 text-xs sm:text-sm text-white-300 font-bold">Information Technology Specialist in Databases</p>
         </div>
     </div>
+</div>
+
+
 
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
         <div class="relative bg-white p-6 rounded-lg max-w-3xl w-full overflow-hidden">
