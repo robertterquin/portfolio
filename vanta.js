@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scale: 1.00,
     scaleMobile: 1.00,
     color: 0xffffff,
-    backgroundColor: 0x090909, // Make sure this is correct
+    backgroundColor: 0x090909, 
     spacing: 20.00,
     showDots: false
   });
