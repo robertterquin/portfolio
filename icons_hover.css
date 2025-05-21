@@ -30,6 +30,31 @@
     filter: hue-rotate(180deg); 
 }
 
+/* Minimal scrollbar styling */
+#tech-stack::-webkit-scrollbar {
+    height: 6px; /* Controls thickness */
+}
+
+#tech-stack::-webkit-scrollbar-track {
+    background: transparent; /* Optional: makes track invisible */
+}
+
+#tech-stack::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); /* Light white thumb */
+    border-radius: 4px;
+}
+
+#tech-stack::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly darker on hover */
+}
+
+/* Firefox scrollbar */
+#tech-stack {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+
  
 
 
