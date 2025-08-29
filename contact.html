@@ -28,32 +28,54 @@
     </nav>
     
     <div class="relative z-10 flex flex-col items-center p-6 sm:p-10 text-white bg-black/80 border-2 border-white/30 rounded-lg shadow-[0_0_40px_rgba(156,163,175,0.5)] w-auto max-w-[90%] sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl text-center mt-20">
-        <h1 class="text-2xl font-bold text-white-300">CONTACT ME</h1>
-        <h2 class="mt-3 text-[20px] text-white">Let's build something amazing together</h2>
-        
-        <div id="tech-stack" class="mt-10 flex flex-wrap justify-center gap-10">
+        <div class="flex flex-col items-center">
+            <img src="images/formall.png" alt="Profile Avatar" class="w-20 h-20 rounded-full border-2 border-white shadow-lg mb-4">
+            <h1 class="text-2xl font-bold text-white-300">CONTACT ME</h1>
+            <h2 class="mt-3 text-[20px] text-white">Let's build something amazing together</h2>
+            <p class="mt-2 text-sm text-gray-300">Open to freelance, collaboration, or questions!</p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xdklavod" method="POST" class="mt-8 flex flex-col gap-4 w-full max-w-md mx-auto">
+            <input aria-label="Name" type="text" name="name" placeholder="Your Name" required class="bg-black/70 border border-white/30 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-400 transition" />
+            <input aria-label="Email" type="email" name="email" placeholder="Your Email" required class="bg-black/70 border border-white/30 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-400 transition" />
+            <textarea aria-label="Message" name="message" placeholder="Your Message" required rows="4" class="bg-black/70 border border-white/30 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-400 transition"></textarea>
+            <input type="hidden" name="_subject" value="New contact form submission from portfolio">
+            <button type="submit" class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-6 rounded-lg transition">Send Message</button>
+            <p id="form-status" class="mt-2 text-sm"></p>
+        </form>
+        <div class="mt-10 flex flex-wrap justify-center gap-10">
             <div class="flex flex-col items-center">
-                <a href="https://github.com/robertterquin" target="_blank" class="w-20 h-20">
-                    <img src="images/github.png" alt="GitHub Icon" class="w-full h-full object-cover rounded-lg transition-transform transform hover:scale-110 hover:shadow-white">
+                <a href="https://github.com/robertterquin" target="_blank" aria-label="GitHub" class="w-20 h-20 group">
+                    <img src="images/github.png" alt="GitHub Icon" class="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-110 group-hover:shadow-white focus:scale-110 focus:shadow-white" />
                 </a>
                 <p class="mt-2 text-sm text-gray-300 font-bold">GitHub</p>
             </div>
             <div class="flex flex-col items-center">
-                <a href="https://www.linkedin.com/in/robert-terquin-laqui-29a785355/" target="_blank" class="w-20 h-20">
-                    <img src="images/linkedin.png" alt="LinkedIn Icon" class="w-20 h-20 object-cover rounded-lg transition-transform transform hover:scale-110 hover:shadow-white">
+                <a href="https://www.linkedin.com/in/robert-terquin-laqui-29a785355/" target="_blank" aria-label="LinkedIn" class="w-20 h-20 group">
+                    <img src="images/linkedin.png" alt="LinkedIn Icon" class="w-20 h-20 object-cover rounded-lg transition-transform transform group-hover:scale-110 group-hover:shadow-white focus:scale-110 focus:shadow-white" />
                 </a>
                 <p class="mt-2 text-sm text-gray-300 font-bold">LinkedIn</p>
             </div>
         </div>
+        <p class="mt-8 text-xs text-gray-400">Your information is kept private and only used to respond to your inquiry.</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
     <script src="vanta.js"></script>
     <script src="navigation.js"></script>
     <script src="menubtn.js"></script>
     <script src="transition.js"></script>
+    <script>
+    // Enhanced form handling for Formspree
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        // Show loading state
+        document.getElementById('form-status').textContent = 'Sending message...';
+        document.getElementById('form-status').className = 'mt-2 text-blue-400 text-sm';
+        
+        // Let the form submit naturally to Formspree
+        // Formspree will handle the redirect or show their thank you page
+    });
+    </script>
 </body>
 </html>
