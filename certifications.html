@@ -74,11 +74,11 @@
     </div>
 </div>
 
-    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-        <div class="relative bg-white p-6 rounded-lg max-w-3xl w-full overflow-hidden">
-            <span class="absolute top-0 right-0 p-2 text-gray-700 cursor-pointer" onclick="closeModal()">&times;</span>
-            <img id="modal-image" src="" alt="Enlarged Certificate" class="w-full object-contain max-h-[80vh] mx-auto mb-4 block" style="border-right: none;">
-            <h3 id="modal-title" class="text-xl font-bold text-center text-black"></h3>
+    <!-- Modal for enlarged certificate view -->
+    <div id="modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm" onclick="closeModal()">
+        <div class="relative max-w-7xl max-h-screen p-4" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-4xl font-bold hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full w-12 h-12 flex items-center justify-center">&times;</button>
+            <img id="modal-image" src="" alt="" class="max-w-full max-h-screen object-contain rounded-lg">
         </div>
     </div>
 

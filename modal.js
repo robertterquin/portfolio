@@ -1,9 +1,22 @@
-function openModal(imageSrc, title) {
-    document.getElementById("modal").classList.remove("hidden");
-    document.getElementById("modal-image").src = imageSrc;
-    document.getElementById("modal-title").textContent = title;
+// Modal functions for enlarged certificate view
+function openModal(imageSrc, imageAlt) {
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modal-image');
+    modalImage.src = imageSrc;
+    modalImage.alt = imageAlt;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
 }
 
 function closeModal() {
-    document.getElementById("modal").classList.add("hidden");
+    const modal = document.getElementById('modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = ''; // Restore scrolling
 }
+
+// Close modal on ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
