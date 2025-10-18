@@ -30,20 +30,62 @@
         </div>
     </nav>
 
-    <div class="relative z-10 flex flex-col items-center p-6 sm:p-10 text-white bg-black/80 border-2 border-white/30 rounded-lg shadow-[0_0_40px_rgba(156,163,175,0.5)] w-auto max-w-[90%] sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl text-center mt-20 mx-4">
-        <div class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-white shadow-xl transition-transform transform duration-700 hover:scale-110 hover:shadow-white">
+    <div class="relative z-10 flex flex-col items-center p-4 sm:p-6 text-white bg-black/80 border-2 border-white/30 rounded-lg shadow-[0_0_40px_rgba(156,163,175,0.5)] w-auto max-w-[90%] sm:max-w-xl md:max-w-2xl lg:max-w-2xl text-center mt-16 mx-4 mb-4">
+        <!-- Profile Image -->
+        <div class="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-3 border-white shadow-xl transition-transform transform duration-700 hover:scale-110 hover:shadow-white">
             <img src="images/formall.png" alt="Profile Picture" class="w-full h-full object-cover">
         </div>
 
-        <h1 class="mt-6 text-lg sm:text-2xl md:text-2xl font-bold">ABOUT ME</h1>
-        
-        <p class="mt-6 text-sm sm:text-lg md:text-xl text-white-600 leading-relaxed px-4 sm:px-10">
-            I'm Robert Terquin C. Laqui, a 20-year-old IT student at St. Dominic College of Asia with a passion for technology and coding. I love solving problems, learning new skills, and working on creative projects.
-        </p>
+        <!-- Main Title -->
+        <h1 class="mt-4 text-xl sm:text-2xl md:text-3xl font-bold tracking-wide">ABOUT ME</h1>        <!-- Intro Paragraphs -->
+        <div class="mt-4 space-y-3 max-w-2xl px-2">
+            <p class="text-sm sm:text-base md:text-base text-gray-300 leading-relaxed">
+                I'm <span class="font-semibold text-white">Robert Terquin C. Laqui</span>, a 20-year-old IT student at St. Dominic College of Asia with a passion for technology and coding. I love solving problems, learning new skills, and working on creative projects.
+            </p>
 
-        <p class="mt-4 text-sm sm:text-lg md:text-xl text-white-600 leading-relaxed px-4 sm:px-10">
-            In my free time, I enjoy basketball, cycling, and exploring programming ideas. My dream is to become a mobile app developer to create apps that make life easier. I'm always eager to learn and grow in the tech world!
-        </p>
+            <p class="text-sm sm:text-base md:text-base text-gray-300 leading-relaxed">
+                My dream is to become a <span class="font-semibold text-white">mobile app developer</span> to create apps that make life easier. I'm always eager to learn and grow in the tech world!
+            </p>
+        </div>
+
+        <!-- Interests & Hobbies Section -->
+        <div class="mt-6 w-full max-w-2xl">
+            <h2 class="text-lg sm:text-xl font-bold mb-4">Interests & Hobbies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <!-- Interest Card 1 -->
+                <div class="bg-white/5 border border-white/20 rounded-lg p-3 hover:bg-white/10 transition-all">
+                    <div class="text-2xl mb-1">🏀</div>
+                    <h3 class="font-semibold text-white mb-1 text-sm">Basketball</h3>
+                    <p class="text-xs text-gray-300">Playing pickup games and staying active</p>
+                </div>
+                
+                <!-- Interest Card 2 -->
+                <div class="bg-white/5 border border-white/20 rounded-lg p-3 hover:bg-white/10 transition-all">
+                    <div class="text-2xl mb-1">🚴</div>
+                    <h3 class="font-semibold text-white mb-1 text-sm">Cycling</h3>
+                    <p class="text-xs text-gray-300">Exploring new routes and enjoying the outdoors</p>
+                </div>
+                
+                <!-- Interest Card 3 -->
+                <div class="bg-white/5 border border-white/20 rounded-lg p-3 hover:bg-white/10 transition-all">
+                    <div class="text-2xl mb-1">💻</div>
+                    <h3 class="font-semibold text-white mb-1 text-sm">Coding</h3>
+                    <p class="text-xs text-gray-300">Building projects and experimenting with new tech</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="mt-6 w-full max-w-2xl mb-2">
+            <h2 class="text-lg sm:text-xl font-bold mb-3">Current Focus</h2>
+            <div class="bg-black/70 border border-white/20 rounded-lg p-4">
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+                    📱 Building mobile applications with modern frameworks<br/>
+                    🎓 Completing my BSIT degree at St. Dominic College of Asia<br/>
+                    🚀 Learning new technologies and best practices in software development
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
