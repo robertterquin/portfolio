@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Poppins', sans-serif;" class="h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative text-white">
+<body style="font-family: 'Poppins', sans-serif;" class="min-h-screen flex flex-col items-center justify-start bg-black overflow-y-auto overflow-x-hidden relative text-white py-20">
     <div class="absolute inset-0 z-0" id="vanta-bg"></div>
 
     <nav class="fixed top-0 left-0 w-full bg-black/60 backdrop-blur-lg shadow-lg py-3 px-6 sm:px-10 flex flex-wrap md:flex-nowrap justify-between items-center z-50 border-b border-gray-700">
@@ -29,36 +29,36 @@
         </div>
     </nav>
 
-    <div class="relative z-10 w-full max-w-7xl px-4 sm:px-8 py-24">
-        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">MY PROJECTS</h1>
-        <p class="text-center text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-12">
+    <div class="relative z-10 w-[95%] max-w-7xl px-4 sm:px-8 py-8 mt-12">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4 break-words">MY PROJECTS</h1>
+        <p class="text-center text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-12 break-words px-2">
             A collection of mobile and web applications I've built, showcasing my skills in full-stack development, UI/UX design, and problem-solving.
         </p>
 
         <!-- Projects Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             
             <!-- Project Card 1 -->
-            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer" onclick="openModal('images/smart_event.jpg', 'Smart Event App Screenshot')">
-                <div class="h-96 flex items-center justify-center rounded-lg overflow-hidden">
+            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer w-full" onclick="openModal('images/smart_event.jpg', 'Smart Event App Screenshot')">
+                <div class="h-96 w-full flex items-center justify-center rounded-lg overflow-hidden">
                     <img src="images/smart_event.jpg" alt="Smart Event App Screenshot" class="w-full h-full object-contain" loading="lazy">
                 </div>
-                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center">Smart Event</h3>
-                <p class="text-gray-300 text-base leading-relaxed text-center mb-3">Smart Event is a full-featured event management app that streamlines planning, registration, and attendee communication. It includes event creation templates, and automated email notifications.</p>
-                <div class="flex flex-wrap gap-2 justify-center">
+                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center break-words w-full">Smart Event</h3>
+                <p class="text-gray-300 text-base leading-relaxed text-center mb-3 break-words w-full">Smart Event is a full-featured event management app that streamlines planning, registration, and attendee communication. It includes event creation templates, and automated email notifications.</p>
+                <div class="flex flex-wrap gap-2 justify-center w-full">
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">Kotlin</span>
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">Java</span>
                 </div>
             </div>
 
             <!-- Project Card 2 -->
-            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer" onclick="openModal('images/smart_exam.jpg', 'Smart Exam App Screenshot')">
-                <div class="h-96 flex items-center justify-center rounded-lg overflow-hidden">
+            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer w-full" onclick="openModal('images/smart_exam.jpg', 'Smart Exam App Screenshot')">
+                <div class="h-96 w-full flex items-center justify-center rounded-lg overflow-hidden">
                     <img src="images/smart_exam.jpg" alt="Smart Exam App Screenshot" class="w-full h-full object-contain" loading="lazy">
                 </div>
-                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center">Smart Exam</h3>
-                <p class="text-gray-300 text-base leading-relaxed text-center mb-3">Smart Exam is a secure, scalable online assessment platform built with Flask. It supports multiple question types (MCQ, short answer, coding), timed exams, automatic scoring, and instructor dashboards with performance analytics.</p>
-                <div class="flex flex-wrap gap-2 justify-center">
+                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center break-words w-full">Smart Exam</h3>
+                <p class="text-gray-300 text-base leading-relaxed text-center mb-3 break-words w-full">Smart Exam is a secure, scalable online assessment platform built with Flask. It supports multiple question types (MCQ, short answer, coding), timed exams, automatic scoring, and instructor dashboards with performance analytics.</p>
+                <div class="flex flex-wrap gap-2 justify-center w-full">
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">HTML</span>
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">CSS</span>
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">JavaScript</span>
@@ -67,13 +67,13 @@
             </div>
 
             <!-- Project Card 3 -->
-            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer" onclick="openModal('images/next_step.jpg', 'Next Step App Screenshot')">
-                <div class="h-96 flex items-center justify-center rounded-lg overflow-hidden">
+            <div class="bg-black/80 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 shadow-[0_0_40px_rgba(156,163,175,0.5)] hover:shadow-[0_0_60px_rgba(156,163,175,0.7)] hover:scale-105 transition-all duration-300 flex flex-col items-center cursor-pointer w-full" onclick="openModal('images/next_step.jpg', 'Next Step App Screenshot')">
+                <div class="h-96 w-full flex items-center justify-center rounded-lg overflow-hidden">
                     <img src="images/next_step.jpg" alt="Next Step App Screenshot" class="w-full h-full object-contain" loading="lazy">
                 </div>
-                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center">Next Step</h3>
-                <p class="text-gray-300 text-base leading-relaxed text-center mb-3">Next Step helps users plan and track their IT career growth by mapping skills to recommended learning resources and milestones. It features personalized roadmaps, and progress tracking, to guide learners.</p>
-                <div class="flex flex-wrap gap-2 justify-center">
+                <h3 class="text-2xl font-bold text-white mt-3 mb-1 text-center break-words w-full">Next Step</h3>
+                <p class="text-gray-300 text-base leading-relaxed text-center mb-3 break-words w-full">Next Step helps users plan and track their IT career growth by mapping skills to recommended learning resources and milestones. It features personalized roadmaps, and progress tracking, to guide learners.</p>
+                <div class="flex flex-wrap gap-2 justify-center w-full">
                     <span class="px-3 py-1 bg-white/10 border border-white/20 text-white text-xs rounded-full">Java</span>
                 </div>
             </div>
